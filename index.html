@@ -7,7 +7,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="">
+<body class="lg:flex lg:justify-between lg:items-center">
     <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-no-repeat bg-[length:1300px_500px]
                              lg:bg-[url('./images/bg-main-desktop.png')] lg:bg-[length:500px_100%] lg:h-screen">  
         <div id="back-card-container" class="">
@@ -35,47 +35,28 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!-- <section id="card-inputfield">
-        <form action="submit" class="mt-16">
-            <label for="name" class="">CARDHOLDER NAME</label>
-            <input id="name" name="cardholder" type="text" class="bg-black">
-            <label for="number" class="">CARD NUMBER</label>
-            <input type="number" name="card-number" class="bg-black">
-            <div>
-               <div>
-                <input type="text" id="exp" class="bg-black">
-                <input type="text" id="exp" class="bg-black">
-               </div>
+    </section>  
+    <form id="card-inputfield" class="mt-20 flex flex-col px-4 lg:w-[45%] lg:mb-[10rem]">
+        <div class="flex flex-col">  
+            <label for="name" class="text-[0.8rem] mb-[0.3rem]">CARDHOLDER NAME</label>
+            <input id="name" name="cardholder" type="text" class="bg-black text-[1.3rem] p-[0.5rem] rounded">
+        </div>
+        <div class="flex flex-col mt-4">
+            <label for="number"  class="text-[0.8rem] mb-[0.3rem]">CARD NUMBER</label>
+            <input type="number" name="card-number" class="bg-black text-[1.3rem] p-[0.5rem] rounded">
+        </div>
+        <div class="flex mt-4">
+            <div class=" w-[50%]">
+                <div class="text-[0.8rem] mb-[0.3rem]">EXP. DATE (MM/YY)</div>
+                <input type="text" id="exp" class="bg-black w-[40%] text-[1.3rem] p-[0.5rem] rounded">
+                <input type="text" id="exp" class="bg-black w-[40%] text-[1.3rem] p-[0.5rem] rounded">
+             </div>
+             <div class="w-[50%] flex flex-col">
+                <label for="cvc" class="text-[0.8rem] mb-[0.3rem]">CVC</label>
+                <input id="cvc" type="text" class="bg-black text-[1.3rem] p-[0.5rem] rounded">
             </div>
-        </form>
-    </section> -->
-    
-
-
+        </div>
+    </form>
     <script src="card.js"></script>
 </body>
 </html>
