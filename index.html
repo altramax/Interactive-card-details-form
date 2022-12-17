@@ -8,28 +8,47 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
-    <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-no-repeat  pb-[3rem] bg-[length:500px_500px]">
-        <div id="back-card-container" class="w-[85%] ml-auto bg-[url('./images/bg-card-back.png')] bg-no-repeat bg-cover">
-              <div id="back-card-text" class="text-end pr-[2rem] text-[0.8rem] pt-[4.4rem] pb-[4.4rem]">000</div>
-        </div>
-        <div id="front-card-container" class="absolute top-[7.7rem] py-[1rem] px-[1.5rem] mr-auto w-[78%] bg-[url('./images/bg-card-front.png')] bg-no-repeat bg-cover">
-            <div id="circle" class=" flex items-center">
-                <div id="large-circle" class="w-[1.6rem] h-[1.6rem] rounded-full bg-white mr-3"></div>
-                <div id="small-circle" class="w-[0.8rem] h-[0.8rem] rounded-full border-solid border-white border-[1px]"></div>
-            </div>
-            <div id="front-card-textfield" class="pt-[2.5rem] text-white">
-                <div class="card-number text-[1.3rem] text-center flex justify-between">
-                    <span>0000</span><span>0000</span><span>0000</span><span>0000</span>
-                </div>
-                <div class="flex justify-between pt-[0.7rem]  text-[0.9rem]">
-                    <div id="card-name">JANE APPLESEED</div>
-                    <div id="exp-date">00/00</div>
-                </div>
-            </div>
-        </div>
-    </section>    
 
-    <section id="card-inputfield"></section>
+    <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-no-repeat bg-[length:1000px_1000px]">  
+        <div id="back-card-container" class="">
+              <img src="./images/bg-card-back.png" alt="" class=" ml-auto w-[18rem] pb-12">
+              <div id="back-card-text" class="fixed z-10 text-[0.8rem] top-[6.3rem] right-[3rem]">000</div>
+        </div>
+        <div id="front-card-container" class="">
+            <img src="./images/bg-card-front.png" alt="" class="fixed top-[7.5rem] z-20 left-[1rem] w-[18rem]">
+            <div class="px-[1.5rem] py-[1rem] fixed z-30  top-[7.6rem] mr-auto w-[18rem]">
+                <div id="circle" class=" flex items-center">
+                    <div id="large-circle" class="w-[1.6rem] h-[1.6rem] rounded-full bg-white mr-3"></div>
+                    <div id="small-circle" class="w-[0.8rem] h-[0.8rem] rounded-full border-solid border-white border-[1px]"></div>
+                </div>
+                <div id="front-card-textfield" class="pt-[2.5rem] text-black">
+                    <div class="card-number text-[1.3rem] flex justify-between  w-[15rem]">
+                        <span>0000</span><span>0000</span><span>0000</span><span>0000</span>
+                    </div>
+                    <div class="flex justify-between pt-[0.7rem]  text-[0.9rem]">
+                        <div id="card-name">JANE APPLESEED</div>
+                        <div id="exp-date">00/00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section id="card-inputfield">
+        <form action="submit" class="mt-16">
+            <label for="name" class="">CARDHOLDER NAME</label>
+            <input id="name" name="cardholder" type="text" class="bg-black">
+            <label for="number" class="">CARD NUMBER</label>
+            <input type="number" name="card-number" class="bg-black">
+            <div>
+               <div>
+                <input type="text" id="exp" class="bg-black">
+                <input type="text" id="exp" class="bg-black">
+               </div>
+            </div>
+        </form>
+    </section> -->
     
 
 
