@@ -8,17 +8,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
-
-    <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-no-repeat bg-[length:1000px_1000px]">  
+    <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-no-repeat bg-[length:1300px_500px]
+           lg:bg-[url('./images/bg-main-desktop.png')] lg:bg-[length:500px_100%] lg:h-screen">  
         <div id="back-card-container" class="">
-              <img src="./images/bg-card-back.png" alt="" class=" ml-auto w-[18rem] pb-12">
-              <div id="back-card-text" class="fixed z-10 text-[0.8rem] top-[6.3rem] right-[3rem]">000</div>
+              <img src="./images/bg-card-back.png" alt="" class="ml-auto w-[18rem] pb-12 lg:mt-[21rem] lg:ml-[16.5rem] lg:w-auto">
+              <div id="back-card-text" class="absolute z-10 text-[0.8rem] top-[6.3rem] right-[3rem] lg:top-[29.5rem]
+               lg:left-[40rem] lg:text-[1.2rem]">000</div>
         </div>
         <div id="front-card-container" class="">
-            <img src="./images/bg-card-front.png" alt="" class="fixed top-[7.5rem] z-20 left-[1rem] w-[18rem]">
-            <div class="px-[1.5rem] py-[1rem] fixed z-30  top-[7.6rem] mr-auto w-[18rem]">
+            <img src="./images/bg-card-front.png" alt="" class="absolute top-[7.5rem] z-20 left-[1rem] w-[18rem]
+             md:top-[2rem] lg:top-[6rem] lg:w-auto lg:left-[11rem]">
+            <div class="px-[1.5rem] py-[1rem] absolute z-30  top-[7.6rem] mr-auto w-[18rem]  md:top-[2rem] lg:top-[6rem] lg:w-[25rem] lg:left-[11rem]">
                 <div id="circle" class=" flex items-center">
-                    <div id="large-circle" class="w-[1.6rem] h-[1.6rem] rounded-full bg-white mr-3"></div>
+                    <div id="large-circle" class="w-[1.6rem] h-[1.6rem] rounded-full bg-white mr-3 lg:w-[2.5rem] lg:h-[2.5rem]"></div>
                     <div id="small-circle" class="w-[0.8rem] h-[0.8rem] rounded-full border-solid border-white border-[1px]"></div>
                 </div>
                 <div id="front-card-textfield" class="pt-[2.5rem] text-black">
@@ -35,6 +37,27 @@
     </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <!-- <section id="card-inputfield">
         <form action="submit" class="mt-16">
             <label for="name" class="">CARDHOLDER NAME</label>
