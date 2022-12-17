@@ -8,26 +8,26 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
-    <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-auto bg-no-repeat">
-        <div id="back-card-container" class="ml-auto w-[77%]">
-            <img src="./images/bg-card-back.png" alt="card-back" id="card-back">
-              <div id="back-card-text" class="absolute top-[6rem] right-[3.2rem] text-[0.7rem]">000</div>
+    <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-no-repeat  pb-[3rem] bg-[length:500px_500px]">
+        <div id="back-card-container" class="w-[85%] ml-auto bg-[url('./images/bg-card-back.png')] bg-no-repeat bg-cover">
+              <div id="back-card-text" class="text-end pr-[2rem] text-[0.8rem] pt-[4.4rem] pb-[4.4rem]">000</div>
         </div>
-        <div id="front-card-container" class="mr-auto w-[77%] absolute top-[7.1rem]">
-           <img src="./images/bg-card-front.png" alt="card-front" id="card-front">
-            <div id="circle">
-                <div id="large-circle"></div>
-                <div id="small-circle"></div>
+        <div id="front-card-container" class="absolute top-[7.7rem] py-[1rem] px-[1.5rem] mr-auto w-[78%] bg-[url('./images/bg-card-front.png')] bg-no-repeat bg-cover">
+            <div id="circle" class=" flex items-center">
+                <div id="large-circle" class="w-[1.6rem] h-[1.6rem] rounded-full bg-white mr-3"></div>
+                <div id="small-circle" class="w-[0.8rem] h-[0.8rem] rounded-full border-solid border-white border-[1px]"></div>
             </div>
-            <div id="front-card-textfield">
-                <div class="card-number">0000000000000000</div>
-                <div>
+            <div id="front-card-textfield" class="pt-[2.5rem] text-white">
+                <div class="card-number text-[1.3rem] text-center flex justify-between">
+                    <span>0000</span><span>0000</span><span>0000</span><span>0000</span>
+                </div>
+                <div class="flex justify-between pt-[0.7rem]  text-[0.9rem]">
                     <div id="card-name">JANE APPLESEED</div>
                     <div id="exp-date">00/00</div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <section id="card-inputfield"></section>
     
