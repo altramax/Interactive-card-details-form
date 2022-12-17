@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-auto bg-no-repeat">
+        <div id="back-card-container" class="ml-auto w-[77%]">
+            <img src="./images/bg-card-back.png" alt="card-back" id="card-back">
+              <div id="back-card-text" class="absolute top-[6rem] right-[3.2rem] text-[0.7rem]">000</div>
+        </div>
+        <div id="front-card-container" class="mr-auto w-[77%] absolute top-[7.1rem]">
+           <img src="./images/bg-card-front.png" alt="card-front" id="card-front">
+            <div id="circle">
+                <div id="large-circle"></div>
+                <div id="small-circle"></div>
+            </div>
+            <div id="front-card-textfield">
+                <div class="card-number">0000000000000000</div>
+                <div>
+                    <div id="card-name">JANE APPLESEED</div>
+                    <div id="exp-date">00/00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="card-inputfield"></section>
+    
+
+
+    <script src="card.js"></script>
+</body>
+</html>
