@@ -18,7 +18,7 @@ const button = document.getElementById('check');
     //   if(formCardNum.value =)
     //  }
 
-    let letters = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ","];
+    let letters = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", " "];
 
    // To receive only number 
    formCardNum.addEventListener("keyup", function(e){  
@@ -36,14 +36,21 @@ const button = document.getElementById('check');
          }
 
 
-         if(formCardNum.value.length[e.value] === 5){
-            //  function split(){
-           console.log(   formCardNum.value.match(/.{1,4}/g));
+         
+
+        //  if(formCardNum.value.length[e.value] === 5){
+        //     //  function split(){
+        //    console.log(   formCardNum.value.match(/.{1,4}/g));
            
-            //  }
-         }
+        //     //  }
+        //  }
          
         })
+
+        formCardNum.addEventListener('input', function (e) {
+            e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
+            cardNumber.textContent = e.target.value;
+          });
 
 
 
