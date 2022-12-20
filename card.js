@@ -36,12 +36,12 @@ const button = document.getElementById('check');
          }
 
 
-        //  if(formCardNum.value.length[e.value] === 5){
-        //     //  function split(){
-        //    console.log(   formCardNum.value.match(/.{1,4}/g).replace(',', " "));
+         if(formCardNum.value.length[e.value] === 5){
+            //  function split(){
+           console.log(   formCardNum.value.match(/.{1,4}/g));
            
-        //     //  }
-        //  }
+            //  }
+         }
          
         })
 
