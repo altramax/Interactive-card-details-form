@@ -26,24 +26,27 @@
                 </div>
                 <div id="front-card-textfield" class="pt-[2.5rem] text-black">
                     <div class="text-[1.3rem] flex justify-between  w-[14rem] lg:text-[2rem] lg:pt-[0.3rem] lg:w-[21rem]">
-                        <span id="card-number">1234 5678 9098 7654</span>
+                        <span id="card-number" class="h-8 lg:h-14">1234 5678 9098 7654</span>
                     </div>
                     <div class="flex justify-between pt-[0.7rem]  text-[0.9rem] lg:text-[1.3rem] lg:pt-[1.8rem]">
                         <div id="card-name">JANE APPLESEED</div>
-                        <div id="exp-date">00/00</div>
+                        <div>
+                        <span id="exp-month">00</span><span>/</span><span id="exp-year">00</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </section>  
     <form id="card-inputfield" class="mt-28 flex flex-col px-4 lg:w-[45%] lg:mb-[13rem] md:w-[80%] md:mx-auto lg:w-[35%] text-[1.3rem]">
         <div class="flex flex-col">  
             <label for="name" class="text-[0.8rem] mb-[0.4rem]">CARDHOLDER NAME</label>
-            <input id="name" name="cardholder" type="text" maxlength="5" class="p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]" required>
+            <input id="form-card-name" name="cardholder" type="text" maxlength="24" class="p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]" required>
         </div>
         <div class="flex flex-col mt-6">
             <label for="form-card-number"  class="text-[0.8rem] mb-[0.4rem]">CARD NUMBER</label>
             <input
+            type="text"
             id="form-card-number" name="somename"       
             onkeyup=""
             maxlength = "19"
@@ -53,12 +56,12 @@
         <div class="flex mt-6">
             <div class=" w-[50%]">
                 <div class="text-[0.8rem] mb-[0.4rem]">EXP. DATE (MM/YY)</div>
-                <input type="text" id="exp" class="p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
-                <input type="text" id="exp" class="p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
+                <input type="text" id="form-exp-month" maxlength="2" class="p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
+                <input type="text" id="form-exp-year" maxlength="2" class="p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
              </div>
              <div class="w-[50%] flex flex-col">
                 <label for="cvc" class="text-[0.8rem] mb-[0.4rem]">CVC</label>
-                <input id="cvc" type="text" class="p-[0.7rem] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
+                <input id="form-cvc" type="text" maxlength="3" class="p-[0.7rem] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
             </div>
         </div>
         <span id="check" class="bg-[#220930] text-center text-white mt-8 rounded-[0.8rem] p-[0.7rem] text-[1rem]">confirm</span>

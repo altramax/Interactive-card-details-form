@@ -2,69 +2,51 @@
 const form = document.getElementById('card-inputfield');
 const thankYou = document.getElementById('thank-you');
 const backText = document.getElementById('back-card-text');
+const backForm = document.getElementById('form-cvc');
 const cardNumber = document.getElementById('card-number');
-const formCardNum = document.getElementById('form-card-number');
 const cardName = document.getElementById('card-name');
-const expDate = document.getElementById('exp-date');
+const formCardName = document.getElementById('form-card-name');
+const formCardNum = document.getElementById('form-card-number');
+const expMonth = document.getElementById('exp-month');
+const expYear = document.getElementById('exp-year');
+const formExpMonth = document.getElementById('form-exp-month');
+const formExpYear = document.getElementById('form-exp-year');
+
 const button = document.getElementById('check');
 
+formCardName.addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/[^a-zA-Z ]/g, '').trim();
+    console.log(e.target.value);
+    cardName.textContent = e.target.value;
+});
 
-// document.getElementById(id).style.property = new style
-// form.style.display = 'none';
-// thankYou.style.display = "flex";
+formCardNum.addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/[^\d]/g, '').replace(/(.{4})/g, '$1 ').trim();
+    console.log(e.target.value);
+    cardNumber.textContent = e.target.value;
+  });
 
-//    to stop the input at specific value 
-    //  function stop(){
-    //   if(formCardNum.value =)
-    //  }
+  formExpMonth.addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/[^\d]/g, '').trim();
+    console.log(e.target.value);
+    expMonth.textContent = e.target.value;
+  });
 
-    let letters = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", " "];
+  formExpYear.addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/[^\d]/g, '').trim();
+    console.log(e.target.value);
+    expYear.textContent = e.target.value;
+  });
 
-   // To receive only number 
-   formCardNum.addEventListener("keyup", function(e){  
-
-       for(const num of formCardNum.value){
-           if(!letters.includes(num)){
-               formCardNum.value = formCardNum.value.replace(num, "")
-               console.log(num);          
-            }    
-        }  
-        function maxInputs(){
-            if (formCardNum.value.length > formCardNum.maxLength){
-                formCardNum.value = formCardNum.value.slice(0, formCardNum.maxLength); 
-             }
-         }
-
-
-         
-
-        //  if(formCardNum.value.length[e.value] === 5){
-        //     //  function split(){
-        //    console.log(   formCardNum.value.match(/.{1,4}/g));
-           
-        //     //  }
-        //  }
-         
-        })
-
-        formCardNum.addEventListener('input', function (e) {
-            e.target.value = e.target.value.replace(/[^\dA-Z]/g, '').replace(/(.{4})/g, '$1 ').trim();
-            console.log(e.target.value);
-            cardNumber.textContent = e.target.value;
-          });
+  backForm.addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/[^\d]/g, '').trim();
+    console.log(e.target.value);
+    backText.textContent = e.target.value;
+  });
+  
 
 
 
 
 
 
-button.addEventListener("click", function(){
-
-cardNumber.textContent = formCardNum.value;
-
-    console.log(typeof formCardNum.value);
-
-
-
-
-})  
