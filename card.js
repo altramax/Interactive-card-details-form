@@ -15,7 +15,7 @@ const formExpYear = document.getElementById('form-exp-year');
 const button = document.getElementById('check');
 
 formCardName.addEventListener('input', function (e) {
-    e.target.value = e.target.value.replace(/[^a-zA-Z ]/g, '').trim();
+    e.target.value = e.target.value.replace(/[^a-zA-Z ]/g, '')
     console.log(e.target.value);
     cardName.textContent = e.target.value;
 });
