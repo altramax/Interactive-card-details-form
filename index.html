@@ -30,7 +30,7 @@
                 </div>
                 <div id="front-card-textfield" class="pt-[2.5rem] text-black">
                     <div class="text-[1.3rem] flex justify-between  w-[14rem] lg:text-[2rem] lg:pt-[0.3rem] lg:w-[21rem]">
-                        <span id="card-number" class="h-8 lg:h-14">1234 5678 9098 7654</span>
+                        <span id="card-number" class="h-8 lg:h-14">0000 0000 0000 0000</span>
                     </div>
                     <div class="flex justify-between pt-[0.7rem]  text-[0.9rem] lg:text-[1.3rem] lg:pt-[1.8rem]">
                         <div id="card-name">JANE APPLESEED</div>
@@ -45,7 +45,7 @@
     <form id="card-inputfield" class="mt-28 flex flex-col px-4 lg:w-[45%] md:w-[80%] md:mx-auto lg:w-[35%] text-[1.3rem]">
         <div class="flex flex-col">  
             <label for="name" class="namelabel text-[0.8rem] mb-[0.4rem]"><span class="nameAsterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>CARDHOLDER NAME</label>
-            <input id="form-card-name" name="cardholder" type="text" maxlength="24" class="p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]" required>
+            <input id="form-card-name" name="cardholder" type="text" maxlength="24" class="p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]" required placeholder="e.g. JANE APPLESEED">
         </div>
         <div class="flex flex-col mt-6">
             <label for="form-card-number"  class="numberlabel text-[0.8rem] mb-[0.4rem]"><span class="numberAsterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>CARD NUMBER</label>
@@ -55,17 +55,18 @@
             onkeyup=""
             maxlength = "19"
             class="p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]" required
+            placeholder= "e.g. 1234 5678 9098 7654";
          />
         </div>
         <div class="flex mt-6">
             <div class=" w-[50%]">
                 <div class="explabel text-[0.8rem] mb-[0.4rem]"><span class="expasterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>EXP. DATE (MM/YY)</div>
-                <input type="text" id="form-exp-month" maxlength="2" class="expmonth p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
-                <input type="text" id="form-exp-year" maxlength="2" class="expyear p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
+                <input type="text" id="form-exp-month" maxlength="2" class="expmonth p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px] required"  placeholder="MM">
+                <input type="text" id="form-exp-year" maxlength="2" class="expyear p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required  placeholder="YY">
              </div>
              <div class="w-[50%] flex flex-col">
                 <label for="cvc" class="cvclabel text-[0.8rem] mb-[0.4rem]"><span class="cvcasterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>CVC</label>
-                <input id="form-cvc" type="text" maxlength="3" class="p-[0.7rem] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
+                <input id="form-cvc" type="text" maxlength="3" class="p-[0.7rem] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required placeholder="e.g. 123">
             </div>
         </div>
         <span id="check" class="bg-[#220930] text-center text-white mt-8 rounded-[0.8rem] p-[0.7rem] text-[1rem]">confirm</span>
