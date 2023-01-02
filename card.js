@@ -148,6 +148,11 @@ if(cvcForm.value.length === 3 && formExpYear.value.length === 2 && formExpMonth.
   
 
 if(cvcForm.value.length === 3 && formExpYear.value.length === 2 && formExpMonth.value.length === 2 && formCardNum.value.length === 19 && formCardName.value.length >= 5){
+
+
+
+
+  
   form.style.display="none";
   thankYou.style.display="flex"
 }
