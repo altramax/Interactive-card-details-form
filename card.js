@@ -165,7 +165,7 @@ if(cvcForm.value.length === 3 && formExpYear.value.length === 2 && formExpMonth.
   nameLabel.style.color="black" 
 
   formCardNum.value = "";
-  cardNumber.textContent='1234 5678 9098 7654';
+  cardNumber.textContent='0000 0000 0000 0000';
   numberAsterisk.style.color="black";
   numberLabel.style.color="black" 
 
