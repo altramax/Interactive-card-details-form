@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
-<body class=" lg:flex lg:justify-between lg:items-center">
-    <section id="card" class="pt-8 px-4 bg-[url('./images/bg-main-mobile.png')] bg-no-repeat bg-[length:1300px_500px]
-                             lg:bg-[url('./images/bg-main-desktop.png')] lg:bg-[length:500px_1500px]">  
+<body class=" lg:flex lg:justify-between lg:items-center
+        bg-[url('./images/bg-main-mobile.png')] bg-no-repeat bg-auto
+        lg:bg-[url('./images/bg-main-desktop.png')] lg:bg-auto
+        ">
+    <section id="card" class="back pt-8 px-4">  
         <div id="back-card-container" class="">
-              <img src="./images/bg-card-back.png" alt="" class="ml-auto w-[18rem] pb-12 lg:mt-[24.5rem] lg:ml-[16.5rem] lg:w-auto">
+              <img src="./images/bg-card-back.png" alt="" class="ml-auto w-[18rem] pb-12 lg:pb-0 lg:mt-[24.5rem] lg:ml-[16.5rem] lg:w-auto">
               <div id="back-card-text" class="absolute z-10 text-[0.8rem] top-[6.3rem] right-[3rem] lg:top-[33rem]
                                           lg:left-[40rem] lg:text-[1.3rem]">000</div>
         </div>
@@ -40,11 +44,11 @@
     </section>  
     <form id="card-inputfield" class="mt-28 flex flex-col px-4 lg:w-[45%] lg:mb-[13rem] md:w-[80%] md:mx-auto lg:w-[35%] text-[1.3rem]">
         <div class="flex flex-col">  
-            <label for="name" class="text-[0.8rem] mb-[0.4rem]">CARDHOLDER NAME</label>
+            <label for="name" class="namelabel text-[0.8rem] mb-[0.4rem]"><span class="nameAsterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>CARDHOLDER NAME</label>
             <input id="form-card-name" name="cardholder" type="text" maxlength="24" class="p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]" required>
         </div>
         <div class="flex flex-col mt-6">
-            <label for="form-card-number"  class="text-[0.8rem] mb-[0.4rem]">CARD NUMBER</label>
+            <label for="form-card-number"  class="numberlabel text-[0.8rem] mb-[0.4rem]"><span class="numberAsterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>CARD NUMBER</label>
             <input
             type="text"
             id="form-card-number" name="somename"       
@@ -55,23 +59,23 @@
         </div>
         <div class="flex mt-6">
             <div class=" w-[50%]">
-                <div class="text-[0.8rem] mb-[0.4rem]">EXP. DATE (MM/YY)</div>
-                <input type="text" id="form-exp-month" maxlength="2" class="p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
-                <input type="text" id="form-exp-year" maxlength="2" class="p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
+                <div class="explabel text-[0.8rem] mb-[0.4rem]"><span class="expasterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>EXP. DATE (MM/YY)</div>
+                <input type="text" id="form-exp-month" maxlength="2" class="expmonth p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
+                <input type="text" id="form-exp-year" maxlength="2" class="expyear p-[0.7rem] w-[40%] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
              </div>
              <div class="w-[50%] flex flex-col">
-                <label for="cvc" class="text-[0.8rem] mb-[0.4rem]">CVC</label>
+                <label for="cvc" class="cvclabel text-[0.8rem] mb-[0.4rem]"><span class="cvcasterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>CVC</label>
                 <input id="form-cvc" type="text" maxlength="3" class="p-[0.7rem] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required>
             </div>
         </div>
         <span id="check" class="bg-[#220930] text-center text-white mt-8 rounded-[0.8rem] p-[0.7rem] text-[1rem]">confirm</span>
     </form>
-    <!-- <section id="thank-you" class="mt-28 flex flex-col items-center px-4 md:w-[80%] md:mx-auto lg:w-[35%] lg:mb-[13rem]">
+    <section id="thank-you" class="mt-28 flex flex-col items-center px-4 md:w-[80%] md:mx-auto lg:w-[35%] lg:mb-[13rem]">
           <img src="./images/icon-complete.svg" alt="">
           <p class="font-bold text-[2rem] mt-8">THANK YOU!</p>
           <p class=" mt-2">We've added your card details</p>
           <button class="bg-[#220930] text-white mt-8 rounded-[0.5rem] p-[0.7rem] text-[1rem] w-[80%]">Continue</button>
-    </section> -->
+    </section>
     <script src="card.js"></script>
 </body>
 </html>
