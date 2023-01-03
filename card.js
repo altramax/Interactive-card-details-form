@@ -117,7 +117,7 @@ formCardNum.addEventListener('input', function (e) {
        }
 
 // CARD NUMBER
-   if(formCardNum.value.length === 19 && formCardName.value.length >= 5){
+   if(formCardNum.value.length === 19){
     cardNumber.textContent = formCardNum.value;
    } else{
     numberAsterisk.style.color="red";
@@ -125,21 +125,21 @@ formCardNum.addEventListener('input', function (e) {
    }
 
 //  EXP MONTH
-if(formExpMonth.value.length === 2 && formCardNum.value.length === 19 && formCardName.value.length >= 5){
+if(formExpMonth.value.length === 2){
   expMonth.textContent = formExpMonth.value;
 } else{
   expAsterisk.style.color="red";
 }
 
 //  EXP year
-if(formExpYear.value.length === 2 && formExpMonth.value.length === 2 && formCardNum.value.length === 19 && formCardName.value.length >= 5){
+if(formExpYear.value.length === 2){
   expYear.textContent = formExpYear.value;
 } else{
   expLabel.style.color="red";
 }
 
 // CVC
-if(cvcForm.value.length === 3 && formExpYear.value.length === 2 && formExpMonth.value.length === 2 && formCardNum.value.length === 19 && formCardName.value.length >= 5){
+if(cvcForm.value.length === 3){
   backText.textContent = cvcForm.value;
 } else{
   cvcAsterisk.style.color="red";
