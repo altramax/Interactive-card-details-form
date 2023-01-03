@@ -102,7 +102,7 @@ formCardNum.addEventListener('input', function (e) {
    if(formCardName.value.length >= 5){
      // to capitalize first letter 
        function capital(names){
-           names = formCardName.value.slice(1,20).split(" ");
+           names = formCardName.value.split(" ");
            let g = [];
             for(const name of names){
               g.push(name.replace(name[0], name[0].toUpperCase()));
