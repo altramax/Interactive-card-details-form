@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body class=" lg:flex lg:justify-between lg:items-center
+<body class=" lg:flex lg:justify-between lg:items-end
         bg-[url('./images/bg-main-mobile.png')] bg-no-repeat bg-[length:1500px_230px]
         lg:bg-[url('./images/bg-main-desktop.png')] lg:bg-auto
         ">
@@ -42,10 +42,10 @@
             </div>
         </div> 
     </section>  
-    <form id="card-inputfield" class="mt-28 flex flex-col px-4 lg:w-[45%] md:w-[80%] md:mx-auto lg:w-[35%] text-[1.3rem]">
+    <form id="card-inputfield" class="mt-28 flex flex-col px-4 lg:w-[45%] md:w-[80%] md:mx-auto lg:w-[35%] lg:mb-[5rem] text-[1.3rem]">
         <div class="flex flex-col">  
             <label for="name" class="namelabel text-[0.8rem] mb-[0.4rem]"><span class="nameAsterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>CARDHOLDER NAME</label>
-            <input id="form-card-name" name="cardholder" type="text" maxlength="24" class="p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]" required placeholder="e.g. JANE APPLESEED">
+            <input id="form-card-name" name="cardholder" type="text" maxlength="21" class="p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]" required placeholder="e.g. JANE APPLESEED">
         </div>
         <div class="flex flex-col mt-6">
             <label for="form-card-number"  class="numberlabel text-[0.8rem] mb-[0.4rem]"><span class="numberAsterisk material-icons text-[0.7rem] w-3 lg:text-[0.8rem] lg:w-4">emergency</span>CARD NUMBER</label>
@@ -69,9 +69,9 @@
                 <input id="form-cvc" type="text" maxlength="3" class="p-[0.7rem] p-[0.7rem] rounded-[0.8rem] border-solid border-[#e2e2e2] border-[1px]"  required placeholder="e.g. 123">
             </div>
         </div>
-        <button id="check" class="bg-[#220930] text-center text-white mt-8 rounded-[0.8rem] p-[0.7rem] text-[1rem] cursor-pointer">confirm</button>
+        <span type="submit" id="check" class="bg-[#220930] text-center text-white mt-8 rounded-[0.8rem] p-[0.7rem] text-[1rem] cursor-pointer">confirm</span>
     </form>
-    <section id="thank-you" class="mt-28 flex flex-col items-center px-4 md:w-[80%] md:mx-auto lg:w-[35%]">
+    <section id="thank-you" class="mt-28 flex flex-col items-center px-4 md:w-[80%] md:mx-auto lg:w-[35%] lg:mb-[8rem]">
           <img src="./images/icon-complete.svg" alt="">
           <p class="font-bold text-[2rem] mt-8">THANK YOU!</p>
           <p class=" mt-2">We've added your card details</p>
