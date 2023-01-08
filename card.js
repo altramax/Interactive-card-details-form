@@ -125,7 +125,7 @@ formCardNum.addEventListener('input', function (e) {
    }
 
 //  EXP MONTH
-if(formExpMonth.value.length === 2 && formExpMonth.value > 0 && formExpMonth.value <= 12){
+if(formExpMonth.value.length >= 1  && formExpMonth.value > 0 && formExpMonth.value <= 12){
   expMonth.textContent = formExpMonth.value;
 } else{
   expAsterisk.style.color="red";
