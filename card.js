@@ -125,7 +125,7 @@ formCardNum.addEventListener('input', function (e) {
    }
 
 //  EXP MONTH
-if(formExpMonth.value.length >= 1  && formExpMonth.value > 0 && formExpMonth.value <= 12){
+if(formExpMonth.value.length >= 1 && formExpMonth.value <= 12){
   expMonth.textContent = formExpMonth.value;
 } else{
   expAsterisk.style.color="red";
@@ -147,7 +147,7 @@ if(cvcForm.value.length === 3){
 }
   
 
-if(cvcForm.value.length === 3 && formExpMonth.value.length === 2 && formExpMonth.value > 0 && formExpMonth.value <= 12 &&
+if(cvcForm.value.length === 3 && formExpMonth.value.length === 2 && formExpMonth.value.length >= 1 && formExpMonth.value <= 12 &&
   formExpYear.value.length === 2 && formExpYear.value > 22 && formCardNum.value.length === 19 && formCardName.value.length >= 5){
   form.style.display="none";
   thankYou.style.display="flex"
