@@ -99,6 +99,11 @@ formCardNum.addEventListener('input', function (e) {
   // Button 
   button.addEventListener('click', function(){
   // CARD NAME 
+  let nameVal;
+  let numberVal;
+  let monthVal;
+  let yearVal;
+  let cvcVal;
    if(formCardName.value.length >= 5){
      // to capitalize first letter 
        function capital(names){
@@ -110,7 +115,7 @@ formCardNum.addEventListener('input', function (e) {
           return g  
        }
        let name = capital(formCardName.value);
-       cardName.textContent = String(name).replaceAll(",", " ")
+       nameVal = String(name).replaceAll(",", " ")
        }else{
         nameAsterisk.style.color="red";
         nameLabel.style.color="red";
@@ -118,7 +123,7 @@ formCardNum.addEventListener('input', function (e) {
 
 // CARD NUMBER
    if(formCardNum.value.length === 19){
-    cardNumber.textContent = formCardNum.value;
+    numberVal = formCardNum.value;
    } else{
     numberAsterisk.style.color="red";
     numberLabel.style.color="red";
@@ -126,31 +131,39 @@ formCardNum.addEventListener('input', function (e) {
 
 //  EXP MONTH
 if(formExpMonth.value.length >= 1 && formExpMonth.value <= 12){
-  expMonth.textContent = formExpMonth.value;
+    monthVal = formExpMonth.value;
 } else{
   expAsterisk.style.color="red";
 }
 
 //  EXP year
 if(formExpYear.value.length === 2 && formExpYear.value > 22){
-  expYear.textContent = formExpYear.value;
+   yearVal = formExpYear.value;
 } else{
   expLabel.style.color="red";
 }
 
 // CVC
 if(cvcForm.value.length === 3){
-  backText.textContent = cvcForm.value;
+  cvcVal = cvcForm.value;
 } else{
   cvcAsterisk.style.color="red";
   cvcLabel.style.color="red";
 }
   
 
-if(cvcForm.value.length === 3 && formExpMonth.value.length === 2 && formExpMonth.value.length >= 1 && formExpMonth.value <= 12 &&
-  formExpYear.value.length === 2 && formExpYear.value > 22 && formCardNum.value.length === 19 && formCardName.value.length >= 5){
+
+if(formCardName.value.length >= 5 && formCardNum.value.length === 19 && formExpMonth.value.length >= 1 && formExpMonth.value <= 12
+  && formExpYear.value.length === 2 && formExpYear.value > 22 && cvcForm.value.length === 3){
   form.style.display="none";
-  thankYou.style.display="flex"
+  thankYou.style.display="flex";
+
+  cardName.textContent = nameVal;
+  cardNumber.textContent = numberVal;
+  expMonth.textContent = monthVal;
+  expYear.textContent = yearVal;
+  backText.textContent = cvcVal;
+  
 }
  })
 
